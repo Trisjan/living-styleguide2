@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typografie</title>
+    <link rel="stylesheet" href="../styles/style-images.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/brx3lyu.css" />
+    <!-- rigid square font -->
+    <link rel="stylesheet" href="https://use.typekit.net/kdb0mcl.css" />
+    <!-- yrsa font -->
+  </head>
+
+  <body>
+    <header>
+      <h1>Visual Thinking styleguide v0.1</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li class="image">
+          <a href="../index.html"
+            ><img
+              src="../assets/vtHBO-v1.0-Logo_1.svg"
+              alt="logo van visual Thinking"
+          /></a>
+        </li>
+        <li><a href="headings.html">Headings</a></li>
+        <li><a href="images.html">Images</a></li>
+        <li><a href="kleuren.html">Kleuren</a></li>
+        <li><a href="typografie.html" class="active">Typografie</a></li>
+        <li><a href="knoppen.html">Knoppen</a></li>
+        <li><a href="vormen.html">Vormen</a></li>
+        <li><a href="lijsten.html">Lijsten</a></li>
+        <li><a href="globals.html">Globals</a></li>
+        <li><a href="formulieren.html">Formulieren</a></li>
+        <li><a href="navbar.html">Navigatie</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Typografie</h2>
+
+      <p>
+        vtHBO gebruikt twee lettertypen: Rigid Square en Yrsa. Gebruik Yrsa voor
+        broodtekst en bijschriften. Rigid Square kan worden ingezet voor de
+        koppen, buttons, banners etc.
+      </p>
+
+      <h3>Rigid Square</h3>
+      <a href="https://fonts.adobe.com/fonts/rigid-square" class="link">https://fonts.adobe.com/fonts/rigid-square</a>
+
+      <h3 class="yrsa">Yrsa</h3>
+      <a href="https://fonts.adobe.com/fonts/yrsa" class="link">https://fonts.adobe.com/fonts/yrsa</a>
+
+      <section>
+        <h3>Broodtekst</h3>
+
+        <p>
+          Ga uit van 1rem = 20px. Handhaaf een regelafstand van 1.50 (in dit
+          geval 30px). Mik op 45-80 karakters per regel.
+        </p>
+      </section>
+
+      <section>
+        <pre><code>h1 {
+  line-height: 1.5em;
+}
+</code></pre>
+      </section>
+
+      <section>
+        <h3>Intro’s</h3>
+        <p>Zet de intro’s in 1.333rem met regelafstand 1.5 (39,99px).</p>
+      </section>
+
+      <section>
+        <pre><code>h4 {
+  font-size: 1.333rem;
+  line-height: 1.5em;
+}
+</code></pre>
+      </section>
+
+      <section>
+        <h3>Headings</h3>
+        <p>We gebruiken een schaal van 1.333.</p>
+      </section>
+
+      <section>
+        <h1>Header 1 < h1 > </h1>
+        <p class="color">3.157rem / 63.15px / Rigid Square Extrabold (800)</p>
+
+        <h2>Header 2 < h2 > </h2>
+        <p class="color">2.369rem / 47.37px / Rigid Square Extrabold (800)</p>
+
+        <h3 class="no">Header 3 < h3 > </h3>
+        <p class="color">1.777rem / 35.54px / Rigid Square Extrabold (800)</p>
+
+        <h4>Header 4 < h4 > </h4>
+        <p class="color">1.333rem / 26.66px / Rigid Square Bold (700)</p>
+
+        <h5> < h5 > heading</h5>
+        <p class="color">1rem / 20px / Rigid Square Regular (400)</p>
+
+        <h5> < h6 > heading</h5>
+        <p class="color">0.75rem / 15px / Rigid Square Regular (400)</p>
+
+        <!-- <img
+          src="../assets/typografie.png"
+          alt="groottes en fonts van de headers"
+        /> -->
+      </section>
+
+      <section>
+        <pre><code>h1 {
+  font-size: 4.209rem, 3.157rem, 2.369rem, 1.777rem, 1.333rem, 1rem, 0.75rem;
+  font-family: rigid-square, sans-serif;
+  font-weight: 800, 700, 400;
+}
+</code></pre>
+      </section>
+    </main>
+  </body>
+</html>

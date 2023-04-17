@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: min(calc(1em + 1vw), 4em);
+}
+
+  /* VARIABELES VAN KLEUREN */
+html {
+  --white: #ffffff;
+  --dark-blue: #090940;
+  --orange: #feb51e;
+  --rigid: rigid-square, sans-serif;
+  --broodtekst: "yrsa", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  font-family: var(--broodtekst);
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "kern" 1, "liga" on, "dlig" on;
+  line-height: 1.5;
+
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
+
+body > * {
+  padding: 0.2rem;
+}
+
+header {
+  background-color: var(--white);
+  margin-bottom: 1rem;
+  color: #bfbfd8;
+}
+
+header > h1 {
+  font-size: 1rem;
+  text-align: right;
+}
+
+/* NAVBAR */
+nav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--orange);
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+}
+
+nav li a {
+  text-decoration: none;
+  text-align: left;
+  color: var(--dark-blue);
+  display: block;
+  padding: 15px 0px 15px 60px;
+
+  font-family: var(--rigid);
+  font-weight: 800;
+  font-size: 26px;
+}
+
+nav .image {
+  text-align: center;
+  margin: 0.75rem;
+  display: block;
+  position: relative;
+  left: -20px;
+}
+
+nav a.active {
+  background-color: var(--white);
+}
+
+nav a:hover:not(.active) {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  transition: 0.3s ease-in;
+  background-position: right center;
+  transform: scale(1.05);
+}
+
+section {
+  width: min(100%, 38rem);
+  background: var(--white);
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+section + section {
+  margin-top: 1rem;
+}
+
+h3 {
+  border-bottom: DarkSlateGray 1px solid;
+  margin-bottom: 1rem;
+}
+
+.no {
+  border-bottom: DarkSlateGray 0px solid;
+  margin-bottom: 0px;
+}
+
+pre {
+  padding-left: 0.2rem;
+  background: rgb(0, 0, 0);
+  color: var(--white);
+}
+
+main {
+  margin-left: 350px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+h1 {
+  font-size: 63.15px;
+}
+
+h2 {
+  font-size: 47.37px;
+}
+
+h3 {
+  font-size: 35.54px;
+}
+
+h4 {
+  font-size: 26.66px;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--rigid);
+}
+
+.hexagon {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+
+button {
+  font-family: var(--rigid);
+  font-size: 1em;
+  font-weight: 800;
+  padding: 0.75rem 1rem;
+  border: none;
+  color: var(--dark-blue);
+  background-size: 400%;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-image: linear-gradient(90deg, var(--orange) 50%, var(--dark-blue) 50%);
+}
+
+.btn-secondary {
+  box-shadow: 0px 0px 0px 2px var(--dark-blue) inset;
+  background: transparent;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  background-position: right center;
+  transform: scale(1.05);
+  opacity: 0.9;
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--dark-blue);
+  box-shadow: none;
+}
+
+.pagination {
+  padding: 0.5rem 0.6rem 0.3rem 0.6rem;
+  border: none;
+  background-color: #f96c4f;
+  cursor: pointer;
+}
+
+.link {
+  color: var(--orange);
+  text-decoration: none;
+}
+
+.yrsa {
+  font-family: var(--broodtekst);
+  font-weight: 300;
+}
+
+.color {
+  color: #625c51;
+  opacity: 80%;
+}

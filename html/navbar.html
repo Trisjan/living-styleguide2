@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigatie</title>
+    <link rel="stylesheet" href="../styles/style-images.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/brx3lyu.css" />
+    <!-- rigid square font -->
+    <link rel="stylesheet" href="https://use.typekit.net/kdb0mcl.css" />
+    <!-- yrsa font -->
+  </head>
+  <body>
+    <header>
+        <h1>Visual Thinking styleguide v0.1</h1>
+    </header>
+
+    <nav>
+        <ul>
+          <li class="image"><a href="../index.html"><img src="../assets/vtHBO-v1.0-Logo_1.svg" alt="logo van visual Thinking"></a></li>
+          <li><a href="headings.html">Headings</a></li>
+          <li><a href="images.html">Images</a></li>
+          <li><a href="kleuren.html">Kleuren</a></li>
+          <li><a href="typografie.html">Typografie</a></li>
+          <li><a href="knoppen.html">Knoppen</a></li>
+          <li><a href="vormen.html">Vormen</a></li>
+          <li><a href="lijsten.html">Lijsten</a></li>
+          <li><a href="globals.html">Globals</a></li>
+          <li><a href="formulieren.html">Formulieren</a></li>
+          <li><a href="navbar.html" class="active">Navigatie</a></li>
+        </ul>
+      </nav>
+
+    <main>
+      <h2>Navbars</h2>
+
+      <section>
+        <h3>Navbar</h3>
+        <img src="assets\navbar.png" alt="image of navbar with 4 items" />
+
+        <p>De navbar word gebruikt om te wisselen van paginas of items op het scherm. Bij het linken naar andere paginas gebruiken we het &lt;a&gt; element.</p>
+        
+        <pre><code>     &lt;nav class="navbar"&gt;
+            &lt;ul class="nav-items"&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a href="path van de link"&gt;naam nav item&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a href="path van de link"&gt;naam nav item&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a href="path van de link"&gt;naam nav item&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="nav-item"&gt;
+                    &lt;a href="path van de link"&gt;naam nav item&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+
+nav {
+    padding-left: 4rem;
+    padding-right: 0.5rem;
+    display: flex;
+    align-items: center;
+    background-color: #f9f8f8;
+    margin: 0rem -0.5rem 0rem -0.5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+  
+.nav-items {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 0.75rem 0.75rem;
+    margin: 1.25rem 1.25rem;
+    color: #090940;
+  }
+</code></pre>
+      </section>
+    </main>
+  </body>
+</html>
